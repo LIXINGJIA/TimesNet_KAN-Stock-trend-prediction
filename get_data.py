@@ -1,7 +1,7 @@
 import tushare as ts
 import pandas as pd
 import os
-token='0aaadebd3d92f786adbe10d9dd7fbdb98ce41a9ef8a00ee66008a34a'
+token="your token"#tushare token
 pro = ts.pro_api(token)
 def get_data(stock,path):
 
@@ -62,4 +62,5 @@ if __name__ == '__main__':
         root_path="data/"
         get_data(stock=i,path=root_path)
     # df=pd.read_csv('data/')
+
     # get_data(stock='000001.SZ',path='data/')
